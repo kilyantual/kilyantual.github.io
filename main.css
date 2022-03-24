@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+html{
+    font-family: 'Dela Gothic One', cursive;
+    background-color: rgb(252, 242, 230);
+    
+}
+
+#home{
+    overflow-y: hidden;
+}
+
+h1{
+    margin-left: 5%;
+    margin-bottom: 3%;
+    color:#222;
+    animation: out 1s;
+    animation-fill-mode: forwards;
+}
+
+a{
+    text-decoration: none;
+}
+
+body h1{
+    font-size: clamp(20px, 10vw, 100px);
+}
+
+.title{
+    padding: 0.1vh 0 0.2vh 0;
+
+}
+
+.titletext span{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: clamp(20px, 8vw, 100px);
+    color: transparent;
+    -webkit-text-stroke: 0.2vw #222;
+    margin-left: 5%;
+}
+
+.titletext span::after {
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-1000%);
+    background-color: red;
+}
+
+.title span{
+    animation: out 1s;
+    animation-fill-mode: forwards;
+}
+span:hover{
+    color: #222;
+    animation: in 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.logo{
+    position: absolute;
+    width:120vh;
+    left: -5vw;
+    
+    
+}
+
+.titrecrea{
+    text-align: center;
+    margin-left: 0;
+    margin-top: 5px;
+}
+
+.griditem{
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.18);
+    width: 20vmax;
+    height: 20vmax;
+    overflow: hidden;
+    
+    
+}
+
+.griditem img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 10px;
+    animation: retrecir 1s;
+    animation-fill-mode: forwards;
+}
+
+.griditem p{
+    text-align: center;
+    font-size: 1.2vmax;
+    position: relative;
+    margin-top: 0%;
+}
+
+.container{
+    margin: 0 auto;
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(20vmax, 1fr));
+    column-gap: 1vw;
+    row-gap: 2vw;
+    margin-top:30px;
+    
+}  
+
+.griditem:hover img{
+    animation: agrandir 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes in{
+    from{
+        transform:translateX(0%);
+    }
+
+    to{
+        transform: translateX(10%)
+    }
+}
+
+@keyframes out{
+    from{
+        transform:translateX(10%);
+    }
+
+    to{
+        transform: translateX(0%)
+    }
+}
+
+@keyframes agrandir{
+    from{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+
+    to{
+        width:100%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+}
+
+@keyframes retrecir{
+    from{
+        width:100%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+    to{
+        margin-left: 5%;
+        margin-top: 5%;
+        width:90%;
+    }
+}
