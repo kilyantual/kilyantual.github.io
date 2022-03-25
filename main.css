@@ -1,7 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@900&display=swap');
+
+
+
+@font-face {
+    font-family: Quarant;
+    src: url('Quarant.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Thunder;
+    src: url('Thunder-MediumHC.ttf');
+}
+
 
 html{
-    font-family: Righteous, cursive;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.2em;
     background-color: rgb(252, 242, 230);
     
 }
@@ -10,12 +31,15 @@ html{
     overflow-y: hidden;
 }
 
-h1{
+
+
+.titreindex{
     margin-left: 5%;
     margin-bottom: 3%;
     color:#222;
     animation: out 1s;
     animation-fill-mode: forwards;
+    text-transform: uppercase;
 }
 
 a{
@@ -35,46 +59,56 @@ body h1{
     display: inline-block;
     position: relative;
     overflow: hidden;
-    font-size: clamp(20px, 8vw, 100px);
+    font-size: clamp(20px, 7vw, 8vw);
     color: transparent;
     -webkit-text-stroke: 0.2vw #222;
     margin-left: 5%;
 }
 
-.titletext span::after {
-    content:"";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform: translateX(-1000%);
-    background-color: red;
-}
+
 
 .title span{
-    animation: out 1s;
+    animation: out 0.7s;
     animation-fill-mode: forwards;
 }
 span:hover{
+    transition: 0.2s color;
     color: #222;
-    animation: in 0.5s;
+    animation: in 1s;
     animation-fill-mode: forwards;
 }
 
 .logo{
-    position: absolute;
-    width:120vh;
+    position: fixed;
+    overflow: hidden;
+    width:120vw;
     left: -5vw;
-    
-    
+}
+
+#crea .logo{
+    top:5vh;
+    z-index: 0;
 }
 
 .titrecrea{
+    position: relative;
     text-align: center;
     margin-left: 0;
-    margin-top: 5px;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 0.25vw #222;
+    font-size: 10vw;
+    transition: 0.5s;
+    z-index: 1;
+    margin: auto;
+}
+
+.titrecrea:hover{
+    transition: 0.2s color;
+    color: #222;
+    font-size: 10.5vw;
+    transition: 0.2s color;
+    transition: 1s font-size;
 }
 
 .griditem{
@@ -86,8 +120,6 @@ span:hover{
     width: 20vmax;
     height: 20vmax;
     overflow: hidden;
-    
-    
 }
 
 .griditem img{
@@ -121,6 +153,29 @@ span:hover{
     animation: agrandir 1s;
     animation-fill-mode: forwards;
 }
+
+@media screen and (max-width:700px) {
+    html{
+        overflow: hidden;
+    }
+    .title span{
+        display: flex;
+        
+        -webkit-text-stroke: 0.3vw #222;
+        font-size: 16vw;
+    }
+
+    .titreindex{
+        font-size: 18vw;
+    }
+
+    .logo{
+        top:8vh;
+        width:170vw;
+    }
+}
+
+
 
 @keyframes in{
     from{
@@ -169,3 +224,4 @@ span:hover{
         width:90%;
     }
 }
+
