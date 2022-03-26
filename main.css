@@ -90,7 +90,7 @@ span:hover{
     z-index: 0;
 }
 
-.titrecrea{
+.titrepage{
     position: relative;
     text-align: center;
     margin-left: 0;
@@ -103,7 +103,7 @@ span:hover{
     margin: auto;
 }
 
-.titrecrea:hover{
+.titrepage:hover{
     transition: 0.2s color;
     color: #222;
     font-size: 10.5vw;
@@ -156,7 +156,7 @@ span:hover{
 
 @media screen and (max-width:700px) {
     html{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .title span{
         display: flex;
@@ -175,7 +175,33 @@ span:hover{
     }
 }
 
+.reseaux{
+    
+    position: relative;
+    z-index:10;
+    display: flex;
+    margin-top: 5vw;
+}
 
+
+.glass img{
+    transition: 0.7s;
+}
+
+.glass img:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+
+#instagram{
+    width:20vw;
+    margin-right: 16vw;
+    margin-left:18vw;
+}
+
+#gmail{
+    width:35vw;
+}
 
 @keyframes in{
     from{
