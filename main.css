@@ -55,6 +55,24 @@ body h1{
 
 }
 
+h2{
+    text-align:center;
+    position: relative;
+    bottom:0;
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+    font-size:1.3vw;
+    z-index: 10;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .titletext span{
     display: inline-block;
     position: relative;
@@ -154,33 +172,12 @@ span:hover{
     animation-fill-mode: forwards;
 }
 
-@media screen and (max-width:700px) {
-    html{
-        overflow-x: hidden;
-    }
-    .title span{
-        display: flex;
-        
-        -webkit-text-stroke: 0.3vw #222;
-        font-size: 16vw;
-    }
-
-    .titreindex{
-        font-size: 18vw;
-    }
-
-    .logo{
-        top:8vh;
-        width:170vw;
-    }
-}
-
 .reseaux{
     
     position: relative;
     z-index:10;
     display: flex;
-    margin-top: 5vw;
+    margin-top: 10vmin;
 }
 
 
@@ -201,6 +198,162 @@ span:hover{
 
 #gmail{
     width:35vw;
+}
+
+.graphisme{
+    display: flex;
+    margin-top: 5vh;
+    
+}
+
+.codage{
+    display: flex;
+    margin-top: 5vh;
+    
+}
+
+.moi{
+    display: flex;
+    margin-top: 5vh;
+    
+}
+
+.graphisme h1{
+    font-size: 3vw;
+    position: absolute;
+    
+}
+.contenu p{
+    display: inline-block;
+    width: 42vw;
+    height: 24vw;
+    /* margin: 2vw; */
+    margin-left: 4vw;
+    /* margin-right: 5vw; */
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.contenu img{
+    margin-left: 8vw;
+    width: 35vw;
+    border-radius: 30px;
+}
+
+#apropos .logo{
+    top:5vh;
+    z-index: 0;
+}
+
+.contenu{
+    position: relative;
+}
+
+
+footer{
+    z-index: 10;
+    position: relative;
+}
+
+.navbar{
+    text-align: center;
+    list-style: none;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+.navbar :nth-child(3)::after{
+    content:'';
+}
+
+.navbar li::after{
+    content:'-';
+    font-size: 2vw;
+    color: #222;
+}
+
+.navbar li a{
+    font-size: 2vw;
+    margin: 0 4vw 0 4vw;
+    color: transparent;
+    -webkit-text-stroke: 0.07vw #222;
+    transition: 0.5s;
+
+}
+
+.navbar li a:hover{
+    transition: 0.2s color;
+    color: #222;
+    font-size: 2.2vw;
+    transition: 0.2s color;
+    transition: 1s font-size;
+}
+
+.contactfooter{
+    margin-top: 5%;
+}
+
+
+@media screen and (max-width:500px){
+    .contenu p{
+        font-size: 3vw;
+        overflow-y: scroll;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,0.18);
+        
+    }
+
+    .graphisme img{
+        width:40vw;
+    }
+}
+
+@media screen and (max-width:700px) {
+    html{
+        overflow-x: hidden;
+    }
+    .title span{
+        display: flex;
+        
+        -webkit-text-stroke: 0.3vw #222;
+        font-size: 16vw;
+    }
+
+    .titreindex{
+        font-size: 18vw;
+    }
+
+    .logo{
+        top:8vh;
+        width:170vw;
+    }
+
+    .reseaux{
+        display:block;
+        
+        
+    }
+
+    #gmail{
+        top: 62vh;
+        position: absolute; 
+        left: 49vw; 
+        transform: translate(-50%, -50%); 
+        width: 43vmax;
+    }
+
+    #instagram{
+        top: 20vh;
+        position: absolute; 
+        left: 31vw; 
+        transform: translate(-50%, -50%);
+        width: 28vmax;
+    }
 }
 
 @keyframes in{
