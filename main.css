@@ -40,6 +40,7 @@ html{
     animation: out 1s;
     animation-fill-mode: forwards;
     text-transform: uppercase;
+    font-size: 6.3vw;
 }
 
 a{
@@ -174,10 +175,12 @@ span:hover{
     animation-fill-mode: forwards;
     filter: brightness(0.13);
     transition: 0.5s;
+    
 }
 
 .griditem:hover p{
     display:block;
+
 }
 
 .griditem p{
@@ -186,7 +189,7 @@ span:hover{
     z-index: 15;
     top: 0px;
     text-align: left;
-    margin: 40px;
+    margin: 10%;
 }
 
 .reseaux{
@@ -205,7 +208,7 @@ span:hover{
 .glass img:hover{
     transform: scale(110%);
     transition: 0.5s;
-    filter: brightness(0.1);
+    
 }
 
 #instagram{
@@ -260,7 +263,7 @@ span:hover{
 
 #apropos .logo{
     top:5vh;
-    z-index: 0;
+    z-index: 1;
 }
 
 .contenu{
@@ -313,6 +316,25 @@ footer{
     margin-top: 5%;
 }
 
+.photo{
+    border-radius: 0 40px 40px 0;
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    left: 41.2%;
+    opacity: 0.6;
+    filter:brightness(1.2);
+    /* transform: scaleX(-1); */
+}
+
+.carre{
+    position: absolute;
+    z-index: -2;
+    background-color: #d4ccc1;
+    width: 10vw;
+    height: 10vw;
+    left: 31.2%;
+}
 
 @media screen and (max-width:500px){
     .contenu p{
@@ -343,7 +365,7 @@ footer{
     }
 
     .titreindex{
-        font-size: 18vw;
+        font-size: 20vw;
     }
 
     .logo{
@@ -371,6 +393,21 @@ footer{
         left: 31vw; 
         transform: translate(-50%, -50%);
         width: 28vmax;
+    }
+
+    .photo{
+        border-radius: 0 40px 40px 0;
+        position: absolute;
+        width: 50%;
+        z-index: -1;
+        top: 8%;
+        left: 47.2%;
+        opacity: 0.6;
+        filter:brightness(1.2);
+    }
+
+    .carre{
+        display: none;
     }
 }
 
