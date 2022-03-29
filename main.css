@@ -24,6 +24,7 @@ html{
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.2em;
     background-color: rgb(252, 242, 230);
+    z-index: 1;
     
 }
 
@@ -106,7 +107,7 @@ span:hover{
 
 #crea .logo{
     top:5vh;
-    -webkit-z-index: 0;
+    z-index: 0;
 }
 
 .titrepage{
@@ -118,7 +119,7 @@ span:hover{
     -webkit-text-stroke: 0.25vw #222;
     font-size: 10vw;
     transition: 0.5s;
-    -webkit-z-index: 1;
+    z-index: 1;
     margin: auto;
 }
 
@@ -186,7 +187,7 @@ span:hover{
 .griditem p{
     position: absolute;
     display: none;
-    -webkit-z-index: 15;
+    z-index: 15;
     top: 0px;
     text-align: left;
     margin: 10%;
@@ -195,7 +196,7 @@ span:hover{
 .reseaux{
     
     position: relative;
-    -webkit-z-index:10;
+    z-index:10;
     display: flex;
     margin-top: 10vmin;
 }
@@ -320,7 +321,7 @@ footer{
     border-radius: 0 40px 40px 0;
     position: absolute;
     width: 50%;
-    -webkit-z-index: -1;
+    z-index: -1;
     left: 41.2%;
     opacity: 0.6;
     filter:brightness(1.2);
