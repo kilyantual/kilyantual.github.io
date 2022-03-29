@@ -106,7 +106,7 @@ span:hover{
 
 #crea .logo{
     top:5vh;
-    z-index: 0;
+    -webkit-z-index: 0;
 }
 
 .titrepage{
@@ -118,7 +118,7 @@ span:hover{
     -webkit-text-stroke: 0.25vw #222;
     font-size: 10vw;
     transition: 0.5s;
-    z-index: 1;
+    -webkit-z-index: 1;
     margin: auto;
 }
 
@@ -186,7 +186,7 @@ span:hover{
 .griditem p{
     position: absolute;
     display: none;
-    z-index: 15;
+    -webkit-z-index: 15;
     top: 0px;
     text-align: left;
     margin: 10%;
@@ -195,7 +195,7 @@ span:hover{
 .reseaux{
     
     position: relative;
-    z-index:10;
+    -webkit-z-index:10;
     display: flex;
     margin-top: 10vmin;
 }
@@ -263,7 +263,7 @@ span:hover{
 
 #apropos .logo{
     top:5vh;
-    z-index: -10;
+    -webkit-z-index: -10;
 }
 
 .contenu{
@@ -320,7 +320,7 @@ footer{
     border-radius: 0 40px 40px 0;
     position: absolute;
     width: 50%;
-    z-index: -1;
+    -webkit-z-index: -1;
     left: 41.2%;
     opacity: 0.6;
     filter:brightness(1.2);
@@ -329,7 +329,7 @@ footer{
 
 .carre{
     position: absolute;
-    z-index: -2;
+    -webkit-z-index: -2;
     background-color: #d4ccc1;
     width: 10vw;
     height: 10vw;
@@ -399,7 +399,7 @@ footer{
         border-radius: 0 40px 40px 0;
         position: absolute;
         width: 50%;
-        z-index: -1;
+        -webkit-z-index: -1;
         top: 9%;
         left: 47.2%;
         opacity: 0.6;
