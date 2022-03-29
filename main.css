@@ -330,7 +330,7 @@ footer{
 
 .carre{
     position: absolute;
-    -webkit-z-index: -2;
+    z-index: -2;
     background-color: #d4ccc1;
     width: 10vw;
     height: 10vw;
