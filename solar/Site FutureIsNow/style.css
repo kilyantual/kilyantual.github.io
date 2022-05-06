@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@font-face {
+    font-family: Matroska;
+    src: url(assets/fonts/Matroska-Wg3v.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+a{
+    
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+}
+
+.titre{
+    
+    font-family: Matroska;
+    text-align: center;
+    font-size: 7vw;
+    color: white;
+    
+    
+}
+
+.divtitre{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 25%;
+    left: 7%;
+    animation: arrivee 1s ease;
+}
+
+
+.abstrait{
+    position: absolute;
+    width: 25%;
+    left: 65%;
+    top: -20%;
+}
+
+.haut{
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    left: 0px;
+    top: 0px;
+    background: #00102E;
+    
+    
+}
+
+.wave{
+    width: 100%;
+    
+}
+
+
+
+.lien{
+    letter-spacing: 8px;
+    transition: transform .3s ease-out;
+    display: inline-block;
+    border-bottom: solid white 1.5px;
+    user-select: none;
+    
+}
+
+.lien:hover{
+    transform: translate(7px);
+}
+
+.lien::after{
+    content:'➔'
+}
+
+header{
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    width: 100%;
+}
+
+.menu{
+    width: 100%;
+    margin-top: 2%;
+}
+
+.menu ul{
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    margin: 0rem auto 1rem auto;
+    padding: 2px 2rem 0.2rem 2rem;
+    transition: 0.5s;
+    
+}
+
+.logo{
+    margin-top: 1%;
+    margin-left: 1vw;
+    width:4.5%;
+}
+
+.cls-1{
+    stroke: white;
+    fill:none;
+    stroke-width:20px;
+    stroke-miterlimit:10;
+    transition: 0.5s;
+}
+
+.scroll ul li a{
+    color: #00102E;
+    transition: 0.5s;
+}
+
+.scroll .cls-1{
+    stroke: #00102E;
+    transition: 0.5s;
+}
+
+.discover{
+    position: absolute;
+    top: 110vh;
+    background-color: red;
+    width: 100vw;
+    height: 20vh
+}
+
+@keyframes arrivee{
+    from{
+        top: 20%;
+    }
+    to{
+        top: 25%;
+    }
+}
