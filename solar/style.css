@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@font-face {
+    font-family: Matroska;
+    src: url(assets/fonts/Matroska-Wg3v.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+a{
+    
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+}
+
+.titre{
+    
+    font-family: Matroska;
+    text-align: center;
+    font-size: 7vw;
+    color: white;
+    
+    
+}
+
+.divtitre{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    top: 25%;
+    left: 7%;
+    animation: arrivee 1s ease;
+}
+
+
+.abstrait{
+    position: absolute;
+    width: 25%;
+    left: 65%;
+    top: -20%;
+}
+
+.haut{
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    left: 0px;
+    top: 0px;
+    background: #00102E;
+    
+    
+}
+
+.wave{
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+}
+
+
+
+.lien{
+    letter-spacing: 8px;
+    transition: transform .3s ease-out;
+    display: inline-block;
+    border-bottom: solid white 1.5px;
+    user-select: none;
+    
+}
+
+.lien:hover{
+    transform: translate(7px);
+}
+
+.lien::after{
+    content:'➔'
+}
+
+header{
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    width: 100%;
+}
+
+.menu{
+    width: 100%;
+    margin-top: 2%;
+    position: absolute;
+}
+
+.menu ul{
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li{
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.menu ul li:hover{
+    display: inline-block;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+    margin: 0rem auto 1rem auto;
+    padding: 2px 2rem 0.2rem 2rem;
+    transition: 0.5s;
+    
+}
+
+.logo{
+    margin-top: 1%;
+    margin-left: 1vw;
+    width:4.5%;
+}
+
+.cls-1{
+    stroke: white;
+    fill:none;
+    stroke-width:20px;
+    stroke-miterlimit:10;
+    transition: 0.5s;
+}
+
+.scroll ul li a{
+    color: #00102E;
+    transition: 0.5s;
+}
+
+.scroll .cls-1{
+    stroke: #00102E;
+    transition: 0.5s;
+}
+
+
+model-viewer{
+    width:600px;
+    height: 400px;
+}
+
+.conteneur_image{
+    margin-top: 17%;
+    left: 7%;
+}
+
+#image_maison{
+    margin-bottom: -2%;
+}
+
+#image_maison img{
+    position: absolute;
+    width: 30%;
+    margin-top: -7%;
+    margin-left: 5%;
+}
+
+#maison1{
+    opacity: 0%;
+}
+
+#maison2{
+    opacity: 100%;
+}
+
+button{
+    margin: 10px;
+}
+
+.divslider{
+    display: flex;
+    margin-left: 4%;
+}
+
+.divslider p{
+    display: flex;
+    margin: 12% 3% 0 3%;
+}
+
+#slidereco{
+    position: relative;
+    width: 70%;
+    margin-top: 12%;
+    
+}
+
+#carac{
+    margin-left: 55%;
+    margin-top: 25%;}
+
+#carac li p{
+    display: inline-block;
+    color: #031f53;
+}
+
+#carac li p, #carac li{
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+#wave2{
+    top:60vw;
+}
+
+.about{
+    background-color: #00102E;
+    margin-top: 26%;
+    
+}
+
+.contenu_about{
+    display: flex;
+}
+
+.titre_about{
+    font-family: Matroska;
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.description{
+    text-align: center;
+    width: 30%;
+    margin-top: 3%;
+    
+}
+
+.description p{
+    color: white;
+    font-size: 1vw;
+}
+
+.trois_d{
+    margin: 0 15% 0 10%;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6b6b6b;
+  border: 41px none #ffffff;
+  border-radius: 36px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #d9d9d9;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+input[type=range] {
+    height: 16px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 3px #000000;
+    background: #FFFFFF;
+    border-radius: 14px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 4px #000000;
+    border: 0px solid #000000;
+    height: 10px;
+    width: 40px;
+    border-radius: 7px;
+    background: #031f53;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: 1px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #FFFFFF;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 3px #000000;
+    background: #FFFFFF;
+    border-radius: 14px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 4px #000000;
+    border: 0px solid #000000;
+    height: 10px;
+    width: 40px;
+    border-radius: 7px;
+    background: #031f53;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #FFFFFF;
+    border: 0px solid #000000;
+    border-radius: 28px;
+    box-shadow: 0px 0px 3px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #FFFFFF;
+    border: 0px solid #000000;
+    border-radius: 28px;
+    box-shadow: 0px 0px 3px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 4px #000000;
+    border: 0px solid #000000;
+    height: 10px;
+    width: 40px;
+    border-radius: 7px;
+    background: #031f53;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #FFFFFF;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #FFFFFF;
+  }
+  
+  
+
+@keyframes arrivee{
+    from{
+        top: 20%;
+    }
+    to{
+        top: 25%;
+    }
+}
