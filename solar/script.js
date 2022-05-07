@@ -4,11 +4,11 @@ var maison1 = document.getElementById('maison1')
 var maison2 = document.getElementById('maison2')
 
 window.addEventListener('scroll', ()=>{
-    if (window.scrollY > 900 || window.scrollY < 2100){
+    if (window.scrollY > window.innerWidth/2 || window.scrollY < window.innerWidth/0.9){
         header.classList.add('scroll');
     }
 
-    if(window.scrollY < 900 || window.scrollY > 2100){
+    if(window.scrollY < window.innerWidth/2 || window.scrollY > window.innerWidth/0.9){
         header.classList.remove('scroll');
     }
 });
