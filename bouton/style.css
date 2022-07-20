@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Product;
+    src: url(assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+
+    
+    background: rgb(209, 247, 247);
+    transition: 0.2s;
+
+}
+
+
+  
+
+
+
+.container{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    
+}
+
+
+.cercle{
+    height: 50px;
+    width: 50px;
+    border: 10px solid rgb(10, 10, 49);
+    background: transparent;
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.5s linear;
+    text-align: center;
+}
+
+
+.cercle a{
+    display: inline-block;
+    text-decoration: none;
+    
+    color: rgb(10, 10, 49);
+    font-family: Product;
+    font-size: 1.5em;
+    transform: translateY(35%);
+
+    user-select: none;
+}
+
+.menu_container{
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    
+}
+
+.menu{
+    list-style: none;
+    text-align: center;
+    
+}
+
+.menu li{
+    font-family: Product;
+    
+    margin-top: 3%;
+    
+
+}
+
+.menu li a{
+    font-size: 3em;
+    text-decoration: none;   
+    color: white;
+    transition: 0.5s;
+}
+
+.menu li a:hover{
+    font-size: 3.1em;
+}
+
+@keyframes slideOut{
+    100%{
+        transform: translateX(3000%)
+    }
+}
+
+@keyframes slideInUp{
+    100%{
+        top: 25%;
+    }
+}
+
+@keyframes slideOutUp{
+    0%{
+        top: 25%;
+    }
+    100%{
+        top: -100%;
+    }
+}
+
