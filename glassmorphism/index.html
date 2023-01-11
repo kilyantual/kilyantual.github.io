@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Glassmorphism Generator CSS</title>
+</head>
+
+<body>
+    <section class="land">
+        <div class="result">
+            <div class="glass">
+
+            </div>
+        </div>
+        <div class="parameters">
+            <div class="content">
+                <div>
+                    <label for="blur">Blur</label>
+                    <input type="range"  id="blur" value="10" min="0" max="20">
+                    <label>10px</label>
+                </div>
+                <div>
+                    <label for="transparency">Transparency</label>
+                    <input type="range" id="transparency"  min="0" max="100" value="30">
+                    <label>30%</label>
+                </div>
+                <div>
+                    <label for="radius">Radius</label>
+                    <input type="range" id="radius" value="20" min="0" max="250">
+                    <label>20px</label>
+                </div>
+                <div>
+                    <label for="color">Color</label>
+                    <input type="color" id="color">
+                    <label>20px</label>
+                </div>
+                <div>
+                    <label for="isBackground">Background ?</label>
+                    <input type="checkbox" id="isBackground" checked>
+                </div>
+            </div>
+            <div class="contentcode">
+                <code>
+                    background-color: red;
+                    <br>
+                    border-radius: 20px;
+                    
+                </code>
+            </div>
+        </div>
+        
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

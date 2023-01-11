@@ -1,0 +1,745 @@
+/*--------- Imports ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*--------- Regles generales ----------*/
+* {
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(0, 6, 24);
+
+}
+
+section h2 {
+    font-size: 1.7rem;
+}
+
+section {
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+
+}
+
+
+
+/*----------------------- PAGE PRINCIPALE ----------------------------- */
+
+
+/*--------- Header ----------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1vw 4vw 1vw 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Montserrat;
+    width: 92vw;
+    height: 5vh;
+    z-index: 1000;
+    background-color: rgb(0, 6, 24);
+
+
+}
+
+header nav {
+    width: 40%;
+    font-weight: 400;
+
+}
+
+header nav a {
+    position: relative;
+    color: white;
+
+
+}
+
+header nav a:before {
+    transition: transform .5s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transform: scaleX(0);
+}
+
+header nav a:hover:before {
+    transform: scaleX(1);
+}
+
+header h1 {
+    font-weight: 800;
+}
+
+header .button {
+
+    color: white;
+    font-family: Montserrat;
+    font-weight: 400;
+    background-color: inherit;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    border-radius: 1000px;
+    border: solid 3px white;
+    transition: 0.3s;
+}
+
+header .button:hover {
+    background-color: white;
+    color: rgb(0, 6, 24);
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*--------- Page d'arrivée ----------*/
+
+.heropage {
+    margin-top: 5vh;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas: "content photo";
+
+
+}
+
+.heropageContent {
+    grid-area: content;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.portrait {
+    animation: imgMovement 30s infinite alternate;
+
+
+    width: 75%;
+    grid-area: photo;
+
+    background-image: url(../assets/images/background.webp);
+    background-size: cover;
+    background-position: center;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.heropage h2:first-of-type {
+    font-size: 3.6rem;
+}
+
+.heropage h2 {
+    padding-bottom: 5%;
+}
+
+.heropage .imageTitre {
+    width: 70%;
+    filter: saturate(1.3);
+}
+
+.link {
+    transition: 0.4s;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 1rem;
+
+
+    color: black;
+
+    margin-top: 5%;
+    padding: 2% 6%;
+    background: linear-gradient(90deg, rgb(47, 157, 221), rgb(71, 187, 255));
+
+    border-radius: 1000px;
+}
+
+.heropage .link:hover {
+    font-size: 1.2rem;
+}
+
+.reseaux {
+    margin-top: 5%;
+}
+
+.reseaux img {
+    transition: 0.3s;
+    height: 50px;
+}
+
+.reseaux img:hover {
+    transform: scale(1.1);
+}
+
+.reseaux img:first-of-type {
+    margin-right: 1%;
+}
+
+
+
+
+@keyframes imgMovement {
+    0% {
+        clip-path: polygon(57% 6%, 81% 17%, 95% 38%, 95% 80%, 60% 91%, 28% 90%, 10% 72%, 5% 43%, 16% 11%);
+    }
+
+    25% {
+        clip-path: polygon(51% 9%, 83% 16%, 96% 41%, 94% 70%, 78% 95%, 38% 84%, 16% 73%, 2% 27%, 23% 8%);
+    }
+
+    50% {
+        clip-path: polygon(57% 6%, 81% 17%, 95% 38%, 95% 80%, 60% 91%, 28% 90%, 10% 72%, 5% 43%, 16% 11%);
+    }
+
+    75% {
+        clip-path: polygon(60% 9%, 85% 23%, 94% 43%, 94% 70%, 76% 85%, 33% 93%, 10% 77%, 3% 24%, 30% 8%);
+    }
+
+    100% {
+        clip-path: polygon(50% 6%, 86% 10%, 94% 43%, 94% 70%, 76% 85%, 33% 93%, 10% 77%, 4% 41%, 26% 15%);
+    }
+}
+
+/*--------- Page de présentation ----------*/
+
+.presentation {
+    background-image: url(../assets/images/background.webp);
+    background-size: cover;
+
+
+
+
+}
+
+.presentationContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 30vh;
+
+}
+
+.presentation h2 {
+
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 20px;
+}
+
+.presentation p {
+
+    justify-self: center;
+
+
+    font-weight: 500;
+    width: 70vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    padding: 3vw;
+    border-radius: 15px;
+}
+
+.presentation svg {
+    margin: -5px;
+}
+
+/*-------- Competences ------------ */
+.competences {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.4fr repeat(2, 1fr);
+    grid-template-areas: "titre titre titre"
+        "a b c"
+        "d e f";
+
+
+}
+
+.competences img {
+    width: 25%;
+    justify-self: center;
+    transition: 0.2s;
+}
+
+.competences img:hover {
+    transform: scale(1.1);
+}
+
+.competences .logiciel {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr 3fr;
+    margin-bottom: 10%;
+    width: 100%;
+
+}
+
+.competences * {
+    justify-self: center;
+    align-self: center;
+}
+
+.competences .barre {
+    width: 50%;
+    height: 20%;
+    background-color: rgb(0, 18, 100);
+    border-radius: 500px;
+    z-index: 100;
+
+
+}
+
+.competences .note {
+    height: 100%;
+    background: linear-gradient(90deg, rgb(47, 157, 221), rgb(71, 187, 255));
+    border-radius: 500px;
+}
+
+.competences h2 {
+    grid-area: titre;
+    margin-bottom: 3%;
+}
+
+
+/*-------- Delimitation 1 ------------ */
+
+.delimitation1 {
+
+    background-image: url(../assets/images/background.webp);
+    background-size: cover;
+    position: relative;
+
+}
+
+.delimitation1 svg:last-of-type {
+    margin-bottom: -5px;
+}
+
+
+/*-------- Parcours ------------ */
+
+.parcours {
+    position: relative;
+}
+
+.parcours h2 {
+    margin-bottom: 3%;
+}
+
+.parcoursContent {
+    margin: auto;
+    width: 70%;
+    height: 50%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+}
+
+.parcoursElement {
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    transition: 0.2s;
+
+}
+
+.parcoursContent svg {
+    margin-top: 10%;
+    width: 20%;
+}
+
+.barreParcours {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    z-index: -2;
+}
+
+.parcoursElement p {
+    transition: 0.3s;
+}
+
+.parcoursElement:hover {
+    transform: scale(1.1);
+}
+
+.parcoursElement:hover .parcoursDescription {
+    opacity: 1;
+}
+
+.parcoursDescription {
+    position: absolute;
+    top: 100%;
+    left: 3%;
+    opacity: 0;
+}
+
+.parcours1 g {
+    fill: #FBCCB0;
+}
+
+.parcours2 g {
+    fill: #DB81A1;
+}
+
+.parcours3 g {
+    fill: #8A5EA0;
+}
+
+
+/*-------- Realisations ------------ */
+
+.realisations {
+    margin-top: 18vh;
+}
+
+.realisations h2 {
+    margin-bottom: 10px;
+}
+
+.realisations h3 {
+    margin-bottom: 3%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+}
+
+
+.gallery img {
+    width: 70%;
+}
+
+.galleryElement p {
+    opacity: 0;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.galleryElement img {
+    transition: 0.2s;
+    margin-bottom: 5%;
+    border-radius: 5%;
+}
+
+.galleryElement:hover p {
+    opacity: 1;
+}
+
+.galleryElement:hover img {
+    transform: scale(1.1);
+}
+
+.gallery a {
+    color: white;
+}
+
+/*-------- Delimitation 2 ------------ */
+
+.delimitation2 {
+
+    background-image: url(../assets/images/background.webp);
+    background-size: cover;
+    position: relative;
+    background-position: right bottom;
+
+}
+
+.delimitation2 svg:last-of-type {
+    margin-bottom: -5px;
+}
+
+
+/*-------- Portrait chinois ------------ */
+
+
+.portraitChinois span,
+.portraitChinois h3 {
+    color: black;
+}
+
+.portraitContent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    height: 70%;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+
+.portraitCard {
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    height: 20vw;
+    width: 20vw;
+
+
+
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+
+    border-radius: 10%;
+
+    background-image: linear-gradient(90deg, rgb(47, 157, 221), rgb(71, 187, 255));
+    background-size: cover;
+
+}
+
+.portraitCard:hover {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg)
+
+}
+
+.front p {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.front span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10%;
+
+
+    transform: rotateY(180deg);
+}
+
+.back .titre {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.back img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.back p:not(:first-of-type) {
+    color: black;
+    padding: 20px;
+}
+
+.back strong {
+    color: black;
+    font-size: 1.1rem;
+}
+
+/*-------- Formulaire de contact ------------ */
+
+.contact {
+    background-image: url(../assets/images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact h2 {
+    margin-bottom: 50px;
+}
+
+.contactContent {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "text info";
+
+
+
+    
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    padding: 3vw;
+    border-radius: 15px;
+    color: white;
+    font-family: Montserrat;
+}
+
+form * {
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 90%;
+    color: white;
+    font-family: Montserrat;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+
+}
+
+form textarea {
+    color: white;
+    font-family: Montserrat;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    height: 90%;
+    width: 90%;
+}
+
+form label {
+    display: block;
+}
+
+form fieldset {
+
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+form fieldset:first-of-type {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+form button {
+    transition: 0.3s;
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: end;
+    align-self: end;
+
+    padding: 2% 5%;
+    border-radius: 500px;
+    border: solid 3px rgba(0, 0, 0, 0.4);
+    background-color: transparent;
+
+    font-family: Montserrat;
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+
+
+/*----------------------- PRESENTATION PAOZEN ----------------------------- */
+/*-------- Présentation Paozen ------------ */
+
+.presentationPaozen {
+    background-image: url(../assets/images/green_bg.webp);
+    color: black;
+}
+
+
+/*-------- Présentation Mockup ------------ */
+
+.presentationMockup {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentationMockup div {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.mockupContent {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.mockupContent h3 {
+    margin-bottom: 20px;
+}
+
+.paozenLink {
+    background: linear-gradient(90deg, #7bae7f, rgb(165, 197, 133));
+    padding: 1% 4%;
+}
+
+/* ------ Scrollbar ------ */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #141414 #6e6e6e;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #3a3a3a;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    border: 3px none #ffffff;
+}

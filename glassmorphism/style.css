@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.land{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    font-family: 'Unbounded', cursive;
+    
+}
+
+.result{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.glass{
+    width: 60%;
+    height: 60%;
+}
+
+.parameters{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+    
+    background-color: rgb(20, 34, 80);
+}
+
+.parameters .content{
+    text-align: center;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+}
+
+.parameters code{
+    
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    
+    
+}
+
+
+
+.parameters .contentcode{
+    color: white;
+    height: 80%;
+    width: 80%;
+    background-color: rgb(41, 41, 41);
+    align-self: center;
+    justify-self: center;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 700px){
+    .land{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+/* Input Range Style */
+
+input[type=range] {
+    width: 50%;
+    margin: 1.65px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    background: rgba(0, 0, 0, 0.2);
+    border: 0px solid rgba(1, 1, 1, 0);
+    border: 0;
+    border-radius: 2.2px;
+    width: 100%;
+    height: 8.7px;
+    cursor: pointer;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -1.65px;
+    width: 22px;
+    height: 12px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 28px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #0d0d0d;
+  }
+  input[type=range]::-moz-range-track {
+    background: rgba(0, 0, 0, 0.2);
+    border: 0px solid rgba(1, 1, 1, 0);
+    border: 0;
+    border-radius: 2.2px;
+    width: 100%;
+    height: 8.7px;
+    cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 22px;
+    height: 12px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 28px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 5.15px 0;
+    color: transparent;
+    width: 100%;
+    height: 8.7px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #000000;
+    border: 0px solid rgba(1, 1, 1, 0);
+    border: 0;
+    border-radius: 4.4px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: rgba(0, 0, 0, 0.2);
+    border: 0px solid rgba(1, 1, 1, 0);
+    border: 0;
+    border-radius: 4.4px;
+  }
+  input[type=range]::-ms-thumb {
+    width: 22px;
+    height: 12px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 28px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #0d0d0d;
+  }
+  /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+  @supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range] {
+      margin: 0;
+      /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
+  
